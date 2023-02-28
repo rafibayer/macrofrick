@@ -90,6 +90,9 @@ macro_rules! instr {
         instr!($mem $ptr <);
         instr!($mem $ptr -);
     };
+    ($mem:ident $ptr:ident $other:tt) => {
+        
+    };
 }
 
 fn main() {
