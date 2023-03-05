@@ -2,6 +2,8 @@
 
 Expand brainfuck into rust using Macros!
 
+Read more on my blog: [rafibayer.github.io/2023/02/26/macrofrick](https://rafibayer.github.io/2023/02/26/macrofrick.html)
+
 # How
 Macrofrick defines a macro, `frick!`, which accepts 0 or more TokenTrees of valid Brainfuck code. The macro performs some initial setup to initialize the memory and pointer that represent the brainfuck cell tape and head, before passing each input TokenTree to a second macro `instr!` which expands brainfuck input into the equivalent Rust code.
 
