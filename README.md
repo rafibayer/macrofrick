@@ -71,6 +71,3 @@ The way rust tokenizes and parses forces us to define a few additional patterns 
 To learn Rust macros, and to go very fast! By expanding our brainfuck to Rust, we can leverage the full power of the Rust compiler to do a lot of the work at compile-time. This does make our compilation process quite lengthy, but the resulting binary executes very fast compared to many brainfuck compilers I've seen.
 
 check out the `unsafe` branch for a version that eschews bounds checking via unsafe rust to both compile and run faster. 
-
-# Limitations
-Brainfuck specifies that all non-brainfuck characters are to be considered comments and ignored. Currently, this macro will reject brainfuck code that contains additional characters, or has unmatched loop braces.
